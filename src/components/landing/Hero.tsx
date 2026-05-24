@@ -1,4 +1,5 @@
 import { MessageCircle, ArrowRight, MapPin, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 import heroBg from "@/assets/hero-bg.jpg";
 
 export function Hero() {
@@ -6,7 +7,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center pt-28 pb-20 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src={heroBg}
           alt="Ambiente moderno com automação residencial"
           width={1920}

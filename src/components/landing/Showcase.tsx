@@ -1,3 +1,4 @@
+import Image from "next/image";
 import s1 from "@/assets/showcase-1.jpg";
 import s2 from "@/assets/showcase-2.jpg";
 import s3 from "@/assets/showcase-3.jpg";
@@ -37,7 +38,7 @@ export function Showcase() {
               }`}
             >
               <div className={`relative ${i === 0 ? "aspect-square lg:aspect-auto lg:h-full" : "aspect-[4/3]"}`}>
-                <img
+                <Image
                   src={it.img}
                   alt={it.title}
                   loading="lazy"
